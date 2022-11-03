@@ -1,9 +1,7 @@
----
 - [Introdução](#Introducao)
 - [Hardware e Esquemas Elétricos]()
   - [ESP32]()
   - [ATMega328P](#clone-your-fork)
----
 
 # Braço Robótico
 #### Desenvolvimento de um braço robótico para pegar objetos em ponto A e levar a ponto B
@@ -18,7 +16,6 @@ imagem | Figura 5 do documento
 
 Para o desenvolvimento do braço, foram necessários dois microcontroladores, o NodeMCU ESP32 e o ATMega328P (microcontrolador do Arduino UNO) utilizando o prototocolo de comunicação I²C entre eles, utilizando a linguagem C++ para os microcontroladores, e HTML, JavaScript e CSS para interface de controle do robô. 
 
----
 # Hardware e Esquemas Elétricos
 Como mencionado anteriormente, o projeto usa quatro servomotores. O modelo utilizado foi o MICRO SERVO TOWERPRO 9G SG90 que possui 3 fios, sendo eles para alimentação (fio vermelho), GND (fio marrom) e para PWM (fio laranja). Pode ser alimentado com tensões entre 3,0 à 7,2V. No nosso projeto, utilizamos uma fonte externa, juntamente ao ATMega328P, que envia os sinais PWM para operar os motores.
 
@@ -48,4 +45,3 @@ No ESP32, as ligações são feitas da seguinte forma:
 - No Pino 21: SDA do I²C;
 - No GND: conectado ao GND do ATMega328P(pino 8 ou 22).
 
----
