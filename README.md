@@ -34,6 +34,9 @@ No ATMega328p/Arduino:
 - No pino 28(porta analógica A5 do arduino): o SCL do I²C;
 - No pino 27(porta analógica A4 do arduino): o SDA do I²C;
 
+No nosso projeto, o esquema elétrico é o seguinte:
+<img src="/Esquemas Elétricos/Placa de controle robô ATMega328p.jpeg" alt="PinoutATMega328p" style="height:auto; width:100%;"/>
+
 #### ESP32:
 
 imagem | pinout esp32
