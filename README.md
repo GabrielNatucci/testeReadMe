@@ -12,8 +12,7 @@ O dispositivo em questão foi adquirido no mercado e compõe-se basicamente de u
 
 
 imagem | Figura 5 do documento
-![Figura 5 do documento](/imgs/20221030_141908.jpg "git")
-<img src="/imgs/20221030_141908.jpg" alt="Brço Robótico" style="height: 100px; width:100px;"/>
+<img src="/imgs/20221030_141908.jpg" alt="Brço Robótico" style="height: 500px; width:auto;"/>
 
 
 Para o desenvolvimento do braço, foram necessários dois microcontroladores, o NodeMCU ESP32 e o ATMega328P (microcontrolador do Arduino UNO) utilizando o prototocolo de comunicação I²C entre eles, utilizando a linguagem C++ para os microcontroladores, e HTML, JavaScript e CSS para interface de controle do robô. 
