@@ -1,9 +1,9 @@
-- [Introdução](#Introducao)
+- [Introdução](#braço-robótico)
 - [Hardware e Esquemas Elétricos]()
   - [ESP32]()
   - [ATMega328P](#clone-your-fork)
 
-# Braço Robótico
+#Braço Robótico
 #### Desenvolvimento de um braço robótico para pegar objetos em ponto A e levar a ponto B
 
 Esse braço robótico, desenvolvido pela segunda turma do curso de Sistemas Embarcados da Fatec de Jundiai, foi apresentado como um desafio à classe, sendo uma continuação do projeto da sala anterior, uma esteira seletora.
