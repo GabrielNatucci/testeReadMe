@@ -1,7 +1,7 @@
 - [Introdução](#braço-robótico)
 - [Hardware e Esquemas Elétricos](#hardware-e-esquemas-elétricos)
-  - [ESP32]()
-  - [ATMega328P](#clone-your-fork)
+  - [ATMega328P](#atmega328P)
+  - [ESP32](#esp32)
 
 # Braço Robótico
 #### Desenvolvimento de um braço robótico para pegar objetos em ponto A e levar a ponto B
