@@ -10,7 +10,7 @@ Esse braço robótico, desenvolvido pela segunda turma do curso de Sistemas Emba
 
 O dispositivo em questão foi adquirido no mercado e compõe-se basicamente de uma estrutura em acrílico para a parte mecânica e uma outra eletromecânica relativa aos quatro servomotores (base, altura, avanço e garra). O seu único objetivo é ilustrar, de forma bastante prática, o funcionamento de um equipamento em escala industrial, com nível de complexidade muito próximo no tocante à sua funcionalidade.
 
-<img src="/imgs/Imagem do braço.png" alt="Brço Robótico" style="height:auto; width:70%; border-radius:10px"/>
+<img src="/imgs/Imagem do braço.png" alt="Brço Robótico" style="height:auto; width:100%; border-radius:10px"/>
 
 Para o desenvolvimento do braço, foram necessários dois microcontroladores, o NodeMCU ESP32 e o ATMega328P (microcontrolador do Arduino UNO) utilizando o prototocolo de comunicação I²C entre eles, utilizando a linguagem C++ para os microcontroladores, e HTML, JavaScript e CSS para interface de controle do robô. 
 
