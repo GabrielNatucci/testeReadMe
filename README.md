@@ -39,7 +39,7 @@ No nosso projeto, o esquema elétrico é o seguinte:
 
 #### ESP32:
 
-imagem | pinout esp32
+<img src="/Esquemas Elétricos/ESP32-pinout.png" alt="PinoutATMega328p" style="height:auto; width:100%;"/>
 
 No ESP32, as ligações são feitas da seguinte forma:
 - No Pino 22: SCL do I²C;
