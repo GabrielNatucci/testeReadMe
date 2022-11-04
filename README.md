@@ -19,7 +19,7 @@ Como mencionado anteriormente, o projeto usa quatro servomotores. O modelo utili
 
 #### ATMega328P:
 
-<img src="/imgs/Pinout ATMega328P.png" alt="PinoutATMega328p" style="height:auto; width:100%;"/>
+<img src="/Esquemas Elétricos/Pinout ATMega328P.png" alt="PinoutATMega328p" style="height:auto; width:100%;"/>
 
 O microcontrolador ATMega328P é o microcontrolador presente no Arduino UNO. Porém, no nosso projeto, utilizamos somente o ATMega. Mas, o arduino também pode ser utilizado no lugar dele.
 
