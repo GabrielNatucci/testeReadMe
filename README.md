@@ -72,6 +72,7 @@ Além disso, são necessárias as bibliotecas:
 - WebSocketsServer(essa é instalável pelo próprio gerenciador de bibliotecas do Arduino, e pode ser encontrada com o seguinte nome: **WebSockets** by **Markus Sattler**)
 
 Depois disso, para o processo de configuração inicial do ESP32, é necessário um plugin(esp32-fs), que permite que se suba arquivos à memória flash do ESP32, que nesse projeto são necessários para o funcionamento da interface *Web*.
+
 -[esp32-fs](https://github.com/me-no-dev/arduino-esp32fs-plugin)
 
 Depois de tudo isso, deve se apertar o botão *ESP32 Sketch Data Upload*, em "ferramentas". Após isso, para se conectar ao servidor web criado pelo ESP, basta se conectar ao seu WIFI, que podem ter nome e senhas alterados no próprio código(nas linhas 9 e 10). Depois disso, basta escrever *192.168.4.1* no seu navegador de escolha e assim a seguinte página deve se carregar:
