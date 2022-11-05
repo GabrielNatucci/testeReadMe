@@ -1,10 +1,10 @@
 - [Introdução](#braço-robótico)
 - [Hardware e Esquemas Elétricos](#hardware-e-esquemas-elétricos)
-  - [ATMega328P ou Arduino](#atmega328p-ou-arduino:)
+  - [ATMega328P ou Arduino](#atmega328p-ou-arduino)
   - [ESP32](#esp32)
 - [Software](#software)
-  - [Software do ATMega328P ou Arduino:](#software-do-atmega328p-ou-arduino:)
-  - [Software do ESP32:](#software-do-esp32:)
+  - [Software do ATMega328P ou Arduino:](#software-do-atmega328p-ou-arduino)
+  - [Software do ESP32:](#software-do-esp32)
 - [Aplicação Web para configuração do Robô](#aplicação-web-para-configuração-do-robô)
 - [Sistema Supervisório](#sistema-supervisório)
 
