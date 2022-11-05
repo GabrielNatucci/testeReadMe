@@ -90,10 +90,14 @@ Vale ressaltar que para que haja a configuração efetiva entre o operador para 
 
 <img src="/imgs/Tela de configuração.png" alt="Tela de configuração do braço" style="height:auto; width:100%;"/>
 
+O funcionamento é simples.
+
 # Sistema Supervisório
 
 Todas as funções que estiverem ocorrendo no momento de configuração ou quando o braço estiver em operação automática, serão posssíveis de viazualizar a partir de um sistema supervisório, que é responsável pelo monitoramento em tempo real. A transmissão de dados ocorre pelo protocolo de comunicação RS232, através da porta serial do ESP32. O Software usado no nosso caso é o Elipse E3.
 
-*Observação: a variável "bool b"(linha 24) tem que ser "false" para os dados serem transmitidos ao Elipse E3.*
+*Observação: a variável "bool b"(linha 24), no código do ESP32 tem que ser "false" para os dados serem transmitidos ao Elipse E3.*
+*Além disso, a variável "P1/N1/B1", do RS232(Domíno/Objetos de Servidor/Drivers e OPC/RS232) deve ser alterada à porta "COM" que o esp está usando no seu computador.*
 
-<Imagem tela supervisório>
+Depois de tudo isso, a tela deve se aparecer com algo parecido abaixo:
+<img src="/imgs/TelaSupervisorioRobo.png" alt="Tela de configuração do braço" style="height:auto; width:100%;"/>
