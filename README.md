@@ -56,8 +56,8 @@ No ESP32, as ligações são feitas da seguinte forma:
 
 Se o código for ser usado em um arduino, não tem segredo. Basta acessar a diretório *"/codigos/Arduino"* e lá se encontrará o arquivo para subir nele. Para ele não é necessário instalar nenhuma biblioteca externa as padrões do Arduino.
 
-Senão, será necessário instalar o *breadboard-avr* atráves do seguinte link:
-- [BreadBoard-avr](https://www.arduino.cc/en/uploads/Tutorial/breadboard-1-6-x.zip_gl=1*1w4n6f*_ga*MTIwMzQ0MTc0NC4xNjYzMjU1NTQ3*_ga_NEXN8H46L5*MTY2NzY4NDI0Ni4xNi4wLjE2Njc2ODQyNDYuMC4wLjA.)
+Senão, será necessário instalar o *breadboard-avr* atráves da seguinte página:
+- [BreadBoard-avr](https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoToBreadboard)
 
 #### ESP32:
 
