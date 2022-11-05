@@ -51,20 +51,26 @@ No ESP32, as ligações são feitas da seguinte forma:
 
 # Software
 
-(Parte para explicar um pouco das bibliotecas etc...........)
+Para o código funcionar corretamente, são necessárias três bibliotecas que não são instaladas ao configurar o board manager do ESP32.
+
+Sendo assim, são necessárias:
+- [AsyncTCP](https://github.com/me-no-dev/AsyncTCP)
+- [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer)
+- WebSocketsServer(Essa é instalável pelo próprio gerenciador de bibliotecas do Arduino, e pode ser encontrada com o seguinte nome: **WebSockets** by **Markus Sattler**)
+
 
 # Aplicação Web para configuração do Robô
 
-A fim de se aproximar de uma aplicação real da indústria, além da facilitar a configuração do braço robótico, foi desenvolvido uma aplicação Web, se utilizando das linhguagens como HTML, CSS e JavaScript para a criação de um site para configuração dos movimentos que o dispositivo irá realizar para transporte da peça do ponto A ao B. 
+A fim de se aproximar de uma aplicação real da indústria, além da facilitar a configuração do braço robótico, foi desenvolvido uma aplicação Web, se utilizando das linguagens como HTML, CSS e JavaScript para a criação de um site para configuração dos movimentos que o dispositivo irá realizar para transporte da peça do ponto A ao B. 
 
 Dessa maneira o operador responsável pelo manuseio do braço poderá escolher os ângulos de movimentação da base, avanço, altura e garra do braço, para os respectivos passos que o dispositivo irá fazer em cada posição, tendo a função de escolha do número de passos máximos que serão configurados. Uma vez configurado os movimentos, o braço pode entrar em modo automático. 
 
-Vale ressaltar que para que haja a configuração efetiva entre o operador para o braço, o microcontrolador ESP32 será o responsável pela comunicação entre a aplicação web e os dados que serão passados para o braço robótico, por apresentar wifi integrado, podendo criar um rede que será hospedado o site.
+Vale ressaltar que para que haja a configuração efetiva entre o operador para o braço, o microcontrolador ESP32 é o responsável pela comunicação entre a aplicação web e os dados que serão passados para o braço robótico, por apresentar wifi integrado, podendo criar um *Acess Point* que será hospedado o site.
 
-<Imagem tela de configuração com explicação>
+<img src="/imgs/Tela de configuração.png" alt="Tela de configuração do braço" style="height:auto; width:100%;"/>
 
 # Sistema Supervisório
 
-Todas as funções que estiverem ocorrendo no momento de configuração ou quando o braço estiver em operação automática, será possível viazualizar a partir de um sistema supervisório na qual será responsável pelo monitoramento em tempo real.
+Todas as funções que estiverem ocorrendo no momento de configuração ou quando o braço estiver em operação automática, serão posssíveis de viazualizar a partir de um sistema supervisório, que é responsável pelo monitoramento em tempo real. A transmissão de dados ocorre pelo protocolo de comunicação RS232, através da porta serial do ESP32.
 
 <Imagem tela supervisório>
