@@ -2,6 +2,9 @@
 - [Hardware e Esquemas Elétricos](#hardware-e-esquemas-elétricos)
   - [ATMega328P](#atmega328P)
   - [ESP32](#esp32)
+- [Programação](#programação)
+- [Aplicação Web para configuração do Robô](#aplicação-web-para-configuração-do-robô)
+- [Sistema Supervisório](#sistema-supervisório)
 
 # Braço Robótico
 #### Desenvolvimento de um braço robótico para pegar objetos em ponto A e levar a ponto B
@@ -39,10 +42,29 @@ No nosso projeto, o esquema elétrico é o seguinte:
 
 #### ESP32:
 
-<img src="/Esquemas Elétricos/ESP32-pinout.png" alt="PinoutATMega328p" style="height:auto; width:100%;"/>
+<img src="/Esquemas Elétricos/ESP32-pinout.jpg" alt="PinoutATMega328p" style="height:auto; width:100%;"/>
 
 No ESP32, as ligações são feitas da seguinte forma:
 - No Pino 22: SCL do I²C;
 - No Pino 21: SDA do I²C;
 - No GND: conectado ao GND do ATMega328P(pino 8 ou 22).
 
+# Software
+
+(Parte para explicar um pouco das bibliotecas etc...........)
+
+# Aplicação Web para configuração do Robô
+
+A fim de se aproximar de uma aplicação real da indústria, além da facilitar a configuração do braço robótico, foi desenvolvido uma aplicação Web, se utilizando das linhguagens como HTML, CSS e JavaScript para a criação de um site para configuração dos movimentos que o dispositivo irá realizar para transporte da peça do ponto A ao B. 
+
+Dessa maneira o operador responsável pelo manuseio do braço poderá escolher os ângulos de movimentação da base, avanço, altura e garra do braço, para os respectivos passos que o dispositivo irá fazer em cada posição, tendo a função de escolha do número de passos máximos que serão configurados. Uma vez configurado os movimentos, o braço pode entrar em modo automático. 
+
+Vale ressaltar que para que haja a configuração efetiva entre o operador para o braço, o microcontrolador ESP32 será o responsável pela comunicação entre a aplicação web e os dados que serão passados para o braço robótico, por apresentar wifi integrado, podendo criar um rede que será hospedado o site.
+
+<Imagem tela de configuração com explicação>
+
+# Sistema Supervisório
+
+Todas as funções que estiverem ocorrendo no momento de configuração ou quando o braço estiver em operação automática, será possível viazualizar a partir de um sistema supervisório na qual será responsável pelo monitoramento em tempo real.
+
+<Imagem tela supervisório>
