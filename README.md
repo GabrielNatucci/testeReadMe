@@ -92,7 +92,7 @@ Vale ressaltar que para que haja a configuração efetiva entre o operador para 
 
 <img src="/imgs/Tela de configuração.png" alt="Tela de configuração do braço" style="height:auto; width:100%;"/>
 
-- *Observação: É recomendado que na primeira vez que se iniciar o site, clicar em "reset" e em "save", para que as posiçõe sejam salvas e evite problemas em uso futuro*
+- *Observação: É recomendado que na primeira vez que se iniciar o site, clicar em "reset" e em "save", para que as posições sejam salvas e evite problemas em uso futuro*
 
 Acima o "estado da conexão" e o "modo de funcionamento", indicam respectivamente o estado do *websocket*(que é necessário para comunicação com o ESP32) e o modo de funcionamento atual, que pode ser "Run" e "Program".
 
