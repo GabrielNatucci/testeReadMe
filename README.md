@@ -5,7 +5,7 @@
 - [Software](#software)
   - [Software do ATMega328P ou Arduino:](#software-do-atmega328p-ou-arduino)
   - [Software do ESP32:](#software-do-esp32)
-- [Aplicação Web para configuração do Robô](#aplicação-web-para-configuração-do-robô)
+  - [Aplicação Web para configuração do Robô](#aplicação-web-para-configuração-do-robô)
 - [Sistema Supervisório](#sistema-supervisório)
 
 # Braço Robótico
