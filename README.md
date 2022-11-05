@@ -56,7 +56,7 @@ No ESP32, as ligações são feitas da seguinte forma:
 
 Se o código for ser usado em um arduino, não tem segredo. Basta acessar a diretório *"/codigos/Arduino"* e lá se encontrará o arquivo para subir nele. Para ele não é necessário instalar nenhuma biblioteca externa as padrões do Arduino.
 
-Senão, será necessário instalar o *breadboard-avr* atráves da seguinte página:
+Senão, será necessário instalar o *breadboard-avr* atráves da seguinte página, e seguir os passos que estão nela para fazer o microcontrolador funcionar separadamente:
 - [BreadBoard-avr](https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoToBreadboard)
 
 #### ESP32:
@@ -92,6 +92,7 @@ Vale ressaltar que para que haja a configuração efetiva entre o operador para 
 
 # Sistema Supervisório
 
-Todas as funções que estiverem ocorrendo no momento de configuração ou quando o braço estiver em operação automática, serão posssíveis de viazualizar a partir de um sistema supervisório, que é responsável pelo monitoramento em tempo real. A transmissão de dados ocorre pelo protocolo de comunicação RS232, através da porta serial do ESP32.
+Todas as funções que estiverem ocorrendo no momento de configuração ou quando o braço estiver em operação automática, serão posssíveis de viazualizar a partir de um sistema supervisório, que é responsável pelo monitoramento em tempo real. A transmissão de dados ocorre pelo protocolo de comunicação RS232, através da porta serial do ESP32. O Software usado no nosso caso é o Elipse E3.
+*Observação: a variável "bool b"(linha 24) tem que ser "false" para os dados serem transmitidos ao Elipse E3.*
 
 <Imagem tela supervisório>
