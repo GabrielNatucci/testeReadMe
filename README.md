@@ -11,7 +11,7 @@
 # Braço Robótico
 #### Desenvolvimento de um braço robótico para pegar objetos em ponto A e levar a ponto B
 
-Esse braço robótico, desenvolvido pela segunda turma do curso de Sistemas Embarcados da Fatec de Jundiai, foi apresentado como um desafio à classe, sendo uma continuação do projeto da sala anterior, uma esteira seletora.
+Esse braço robótico, desenvolvido pela 2° turma do curso de Sistemas Embarcados da Fatec de Jundiaí, foi apresentado como um desafio à classe, sendo uma continuação do projeto da sala anterior, uma esteira seletora.
 
 O dispositivo em questão foi adquirido no mercado e compõe-se basicamente de uma estrutura em acrílico para a parte mecânica e uma outra eletromecânica relativa aos quatro servomotores (base, altura, avanço e garra). O seu único objetivo é ilustrar, de forma bastante prática, o funcionamento de um equipamento em escala industrial, com nível de complexidade muito próximo no tocante à sua funcionalidade.
 
@@ -38,7 +38,7 @@ No ATMega328p/Arduino:
 - No pino 17(porta digital 11 do arduino): o PWM do servo da avanço do braço;
 - No pino 8 ou 22(qualquer GND do Arduino): jumper com o negativo da fonte externa, e no negativo do ESP32;
 - No pino 28(porta analógica A5 do arduino): o SCL do I²C;
-- No pino 27(porta analógica A4 do arduino): o SDA do I²C;
+- No pino 27(porta analógica A4 do arduino): o SDA do I²C.
 
 No nosso projeto, o esquema elétrico é o seguinte:
 <img src="/Esquemas Elétricos/Placa de controle robô ATMega328p.jpeg" alt="PinoutATMega328p" style="height:auto; width:100%;"/>
@@ -82,13 +82,13 @@ Depois de tudo isso, deve se apertar o botão *ESP32 Sketch Data Upload*, em "fe
 
 Nesse projeto, apesar de implementarmos a página de login, ela não foi configurada para ser acessada com determinada senha e id. Sendo assim, basta preencher os campos com qualquer coisa que o site deixará vocẽ prosseguir à tela que está no item abaixo.
 
-#### Aplicação Web para configuração do Robô
+#### Aplicação *Web* para configuração do Robô
 
 A fim de se aproximar de uma aplicação real da indústria, além da facilitar a configuração do braço robótico, foi desenvolvido uma aplicação Web, se utilizando das linguagens como HTML, CSS e JavaScript para a criação de um site para configuração dos movimentos que o dispositivo irá realizar para transporte da peça do ponto A ao B. 
 
 Dessa maneira o operador responsável pelo manuseio do braço poderá escolher os ângulos de movimentação da base, avanço, altura e garra do braço, para os respectivos passos que o dispositivo irá fazer em cada posição, tendo a função de escolha do número de passos máximos que serão configurados. Uma vez configurado os movimentos, o braço pode entrar em modo automático. 
 
-Vale ressaltar que para que haja a configuração efetiva entre o operador para o braço, o microcontrolador ESP32 é o responsável pela comunicação entre a aplicação web e os dados que serão passados para o braço robótico, por apresentar wifi integrado, pode criar um *Acess Point* e lidar com com conexões de uma forma relativamente parecida com o que um servidor faria.
+Vale ressaltar que para que haja a configuração efetiva entre o operador para o braço, o microcontrolador ESP32 é o responsável pela comunicação entre a aplicação *web* e os dados que serão passados para o braço robótico, por apresentar *wifi* integrado, pode criar um *Acess Point* e lidar com com conexões de uma forma relativamente parecida com o que um servidor faria.
 
 <img src="/imgs/Tela de configuração.png" alt="Tela de configuração do braço" style="height:auto; width:100%;"/>
 
