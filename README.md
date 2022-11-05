@@ -2,7 +2,7 @@
 - [Hardware e Esquemas Elétricos](#hardware-e-esquemas-elétricos)
   - [ATMega328P](#atmega328P)
   - [ESP32](#esp32)
-- [Programação](#programação)
+- [Software](#software)
 - [Aplicação Web para configuração do Robô](#aplicação-web-para-configuração-do-robô)
 - [Sistema Supervisório](#sistema-supervisório)
 
