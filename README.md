@@ -1,8 +1,10 @@
 - [Introdução](#braço-robótico)
 - [Hardware e Esquemas Elétricos](#hardware-e-esquemas-elétricos)
-  - [ATMega328P](#atmega328P)
+  - [ATMega328P ou Arduino](#atmega328p-ou-arduino:)
   - [ESP32](#esp32)
 - [Software](#software)
+  - [Software do ATMega328P ou Arduino:](#software-do-atmega328p-ou-arduino:)
+  - [Software do ESP32:](#software-do-esp32:)
 - [Aplicação Web para configuração do Robô](#aplicação-web-para-configuração-do-robô)
 - [Sistema Supervisório](#sistema-supervisório)
 
@@ -52,14 +54,14 @@ No ESP32, as ligações são feitas da seguinte forma:
 
 # Software
 
-#### ATMega328P ou Arduino:
+#### Software do ATMega328P ou Arduino:
 
 Se o código for ser usado em um arduino, não tem segredo. Basta acessar a diretório *"/codigos/Arduino"* e lá se encontrará o arquivo para subir nele. Para ele não é necessário instalar nenhuma biblioteca externa as padrões do Arduino.
 
 Senão, será necessário instalar o *breadboard-avr* atráves da seguinte página, e seguir os passos que estão nela para fazer o microcontrolador funcionar separadamente:
 - [BreadBoard-avr](https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoToBreadboard)
 
-#### ESP32:
+#### Software do ESP32:
 
 Para o código funcionar corretamente, são necessárias três bibliotecas que não são instaladas ao configurar o *board manager* do ESP32.
 
@@ -90,7 +92,18 @@ Vale ressaltar que para que haja a configuração efetiva entre o operador para 
 
 <img src="/imgs/Tela de configuração.png" alt="Tela de configuração do braço" style="height:auto; width:100%;"/>
 
-O funcionamento é simples.
+- *Observação: É recomendado que na primeira vez que se iniciar o site, clicar em "reset" e em "save", para que as posiçõe sejam salvas e evite problemas em uso futuro*
+
+Acima o "estado da conexão" e o "modo de funcionamento", indicam respectivamente o estado do *websocket*(que é necessário para comunicação com o ESP32) e o modo de funcionamento atual, que pode ser "Run" e "Program".
+
+Abaixo, são possíveis configurar os passos.
+
+Depois, os botões no final da tela desempenham as seguintes funções:
+- *Run*: coloca o robo em modo automático, onde ele executará os passos configurados pelo operador anteriormente;
+- *Program*: coloca o robo em modo de configuração;
+- *Save*: Salva as posições do robô, fazendo com que mesmo se o robô perca completamente a alimentação, ele lembre do que foi salvo;
+- *Reset*: Volta os valores do passo atual para os valores centrais;
+- *Restart*: Volta todos os valores de todos os passos aos valores centrais.
 
 # Sistema Supervisório
 
