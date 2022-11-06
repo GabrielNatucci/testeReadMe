@@ -56,7 +56,7 @@ No ESP32, as ligações são feitas da seguinte forma:
 
 #### Software do ATMega328P ou Arduino:
 
-Se o código for ser usado em um arduino, basta acessar a diretório *"/codigos/Arduino"* e fazer o *upload* do arquivo nele. Para ele não é necessário instalar nenhuma biblioteca externa ao Arduino.
+Se o código for utilizado em um arduino, basta acessar a diretório *"/codigos/Arduino"* e fazer o *upload* do arquivo nele. Para ele não é necessário instalar nenhuma biblioteca externa ao Arduino.
 
 Senão, será necessário instalar o *breadboard-avr* atráves da seguinte página, e seguir os passos que estão nela para fazer o microcontrolador funcionar separadamente:
 - [BreadBoard-avr](https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoToBreadboard)
@@ -107,7 +107,7 @@ Ao final da tela, os botões no final da tela desempenham as seguintes funções
 
 # Sistema Supervisório
 
-Todas as funções que estiverem ocorrendo no momento de configuração ou quando o braço estiver em operação automática, serão posssíveis de viazualizar a partir de um sistema supervisório, que é responsável pelo monitoramento em tempo real. A transmissão de dados ocorre pelo protocolo de comunicação RS232, através da porta serial do ESP32. O Software usado no nosso caso é o Elipse E3.
+Todas as funções que estiverem ocorrendo no braço robótico, idependente do modo de operação, serão posssíveis de viazualizar a partir de um sistema supervisório, que é responsável pelo monitoramento em tempo real. A transmissão de dados ocorre pelo protocolo de comunicação RS232, através da porta serial do ESP32. O Software usado no nosso caso é o Elipse E3.
 
 - *Observação: a variável "bool b"(linha 24), no código do ESP32 tem que ser "false" para os dados serem transmitidos ao Elipse E3.*
 
