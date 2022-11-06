@@ -1,4 +1,4 @@
-- [Introdução](#braço-robótico)
+- [Braço robótico](#braço-robótico)
 - [Hardware e Esquemas Elétricos](#hardware-e-esquemas-elétricos)
   - [ATMega328P ou Arduino](#atmega328p-ou-arduino)
   - [ESP32](#esp32)
@@ -15,7 +15,7 @@ Esse braço robótico, desenvolvido pela 2° turma do curso de Sistemas Embarcad
 
 O dispositivo em questão foi adquirido no mercado e compõe-se basicamente de uma estrutura em acrílico para a parte mecânica e uma outra eletromecânica relativa aos quatro servomotores (base, altura, avanço e garra). O seu único objetivo é ilustrar, de forma bastante prática, o funcionamento de um equipamento em escala industrial, com nível de complexidade muito próximo no tocante à sua funcionalidade.
 
-<img src="/imgs/Imagem do braço.png" alt="Braço Robótico" style="height:auto; width:100%;"/>
+<img src="/imgs/Imagem do braco.png" alt="Braço Robótico" style="height:auto; width:100%;"/>
 
 Para o desenvolvimento do braço, foram necessários dois microcontroladores, o NodeMCU ESP32 e o ATMega328P (microcontrolador do Arduino UNO) utilizando o prototocolo de comunicação I²C entre eles, utilizando a linguagem C++ para os microcontroladores, e HTML, JavaScript e CSS para interface de controle do robô. 
 
