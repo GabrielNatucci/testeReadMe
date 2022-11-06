@@ -15,7 +15,7 @@ Esse braço robótico, desenvolvido pela 2° turma do curso de Sistemas Embarcad
 
 O dispositivo em questão foi adquirido no mercado e compõe-se basicamente de uma estrutura em acrílico para a parte mecânica e uma outra eletromecânica relativa aos quatro servomotores (base, altura, avanço e garra). O seu único objetivo é ilustrar, de forma bastante prática, o funcionamento de um equipamento em escala industrial, com nível de complexidade muito próximo no tocante à sua funcionalidade.
 
-<img src="/Imagens/Imagem do braco.png" alt="Braço Robótico" style="height:auto; width:100%;"/>
+<img src="/imagens/Imagem_do_braco.png" alt="Braço Robótico" style="height:auto; width:100%;"/>
 
 Para o desenvolvimento do braço, foram necessários dois microcontroladores, o NodeMCU ESP32 e o ATMega328P (microcontrolador do Arduino UNO) utilizando o prototocolo de comunicação I²C entre eles, utilizando a linguagem C++ para os microcontroladores, e HTML, JavaScript e CSS para interface de controle do robô. 
 
@@ -25,7 +25,7 @@ Como mencionado anteriormente, o projeto usa quatro servomotores. O modelo utili
 
 #### ATMega328P ou Arduino:
 
-<img src="/Esquemas Eletricos/Pinout ATMega328P.png" alt="PinoutATMega328p" style="height:auto; width:100%;"/>
+<img src="/esquemas_eletricos/pinout_ATMega328P.png" alt="PinoutATMega328p" style="height:auto; width:100%;"/>
 
 O microcontrolador ATMega328P é o microcontrolador presente no Arduino UNO. Porém, no nosso projeto, utilizamos somente o ATMega. Mas, o arduino também pode ser utilizado no lugar dele.
 
@@ -41,11 +41,11 @@ No ATMega328p/Arduino:
 - No pino 27(porta analógica A4 do arduino): o SDA do I²C.
 
 No nosso projeto, o esquema elétrico é o seguinte:
-<img src="/Esquemas Eletricos/Placa de controle robo ATMega328P.jpeg" alt="PinoutATMega328p" style="height:auto; width:100%;"/>
+<img src="/esquemas_eletricos/Placa_de_controle_robo_ATMega328P.jpeg" alt="PinoutATMega328p" style="height:auto; width:100%;"/>
 
 #### ESP32:
 
-<img src="/Esquemas Eletricos/ESP32-pinout.jpg" alt="PinoutATMega328p" style="height:auto; width:100%;"/>
+<img src="/esquemas_eletricos/ESP32-pinout.jpg" alt="PinoutATMega328p" style="height:auto; width:100%;"/>
 
 No ESP32, as ligações são feitas da seguinte forma:
 - No Pino 22: SCL do I²C;
@@ -76,7 +76,7 @@ Para o processo de configuração inicial do ESP32, é necessário um plugin(esp
 
 Para salvar os arquivos da página de login na memória do ESP, é necessário *clicar* no botão *ESP32 Sketch Data Upload*, em "ferramentas", na *interface* do Arduino. Feito isso, para se conectar ao servidor web criado pelo ESP, basta se conectar ao seu WIFI, que podem ter nome e senhas alterados no próprio código(nas linhas 9 e 10). Para se conectar ao servidor, basta escrever *192.168.4.1* no seu navegador de escolha e assim a seguinte página deve se carregar:
 
-<img src="/Imagens/Tela de Login.png" alt="Tela de login" style="height:auto; width:100%;"/>
+<img src="/imagens/Tela_de_Login.png" alt="Tela de login" style="height:auto; width:100%;"/>
 
 - *Observação: o navegador, às vezes, tentará se conectar ao website usando HTTPS, e não funcionará. Neste caso, mude a url para forçar a conexão usando HTTP.*
 
@@ -90,7 +90,7 @@ Dessa maneira o operador responsável pelo manuseio do braço poderá escolher o
 
 Vale ressaltar que para que haja a configuração efetiva entre o operador para o braço, o microcontrolador ESP32 é o responsável pela comunicação entre a aplicação *web* e os dados que serão passados para o braço robótico, por apresentar *wifi* integrado, pode criar um *Acess Point* e lidar com com conexões de uma forma relativamente parecida com o que um servidor faria.
 
-<img src="/Imagens/Tela de configuracao.png" alt="Tela de configuração do braço" style="height:auto; width:100%;"/>
+<img src="/imagens/Tela_de_configuracao.png" alt="Tela de configuração do braço" style="height:auto; width:100%;"/>
 
 - *Observação: É recomendado que na primeira vez que se iniciar o site, clicar em "reset" e em "save", para que as posições sejam salvas e evite problemas em uso futuro*
 
@@ -114,4 +114,4 @@ Todas as funções que estiverem ocorrendo no braço robótico, idependente do m
 - *Além disso, a variável "P1/N1/B1", do RS232(Domínio/Objetos de Servidor/Drivers e OPC/RS232) deve ser alterada à porta "COM" que o esp está usando no seu computador.*
 
 Depois de tudo isso, a tela deve se aparecer com algo parecido abaixo:
-<img src="/Imagens/TelaSupervisorioRobo.png" alt="Tela de configuração do braço" style="height:auto; width:100%;"/>
+<img src="/imagens/Tela_supervisorio_robo.png" alt="Tela de configuração do braço" style="height:auto; width:100%;"/>
