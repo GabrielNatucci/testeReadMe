@@ -56,7 +56,7 @@ No ESP32, as ligações são feitas da seguinte forma:
 
 #### Software do ATMega328P ou Arduino:
 
-Se o código for ser usado em um arduino, não tem segredo. Basta acessar a diretório *"/codigos/Arduino"* e lá se encontrará o arquivo para subir nele. Para ele não é necessário instalar nenhuma biblioteca externa as padrões do Arduino.
+Se o código for ser usado em um arduino, basta acessar a diretório *"/codigos/Arduino"* e fazer o *upload* do arquivo nele. Para ele não é necessário instalar nenhuma biblioteca externa ao Arduino.
 
 Senão, será necessário instalar o *breadboard-avr* atráves da seguinte página, e seguir os passos que estão nela para fazer o microcontrolador funcionar separadamente:
 - [BreadBoard-avr](https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoToBreadboard)
