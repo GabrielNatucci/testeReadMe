@@ -45,7 +45,7 @@ No nosso projeto, o esquema elétrico é o seguinte:
 
 #### ESP32:
 
-<img src="/esquemas_eletricos/ESP32-pinout.jpg" alt="PinoutATMega328p" style="height:auto; width:100%;"/>
+<img src="/esquemas_eletricos/ESP32_pinout.jpg" alt="Pinout ATMega328p" style="height:auto; width:100%;"/>
 
 No ESP32, as ligações são feitas da seguinte forma:
 - No Pino 22: SCL do I²C;
@@ -76,7 +76,7 @@ Para o processo de configuração inicial do ESP32, é necessário um plugin(esp
 
 Para salvar os arquivos da página de login na memória do ESP, é necessário *clicar* no botão *ESP32 Sketch Data Upload*, em "ferramentas", na *interface* do Arduino. Feito isso, para se conectar ao servidor web criado pelo ESP, basta se conectar ao seu WIFI, que podem ter nome e senhas alterados no próprio código(nas linhas 9 e 10). Para se conectar ao servidor, basta escrever *192.168.4.1* no seu navegador de escolha e assim a seguinte página deve se carregar:
 
-<img src="/imagens/Tela_de_Login.png" alt="Tela de login" style="height:auto; width:100%;"/>
+<img src="/imagens/Tela_de_login.png" alt="Tela de login" style="height:auto; width:100%;"/>
 
 - *Observação: o navegador, às vezes, tentará se conectar ao website usando HTTPS, e não funcionará. Neste caso, mude a url para forçar a conexão usando HTTP.*
 
