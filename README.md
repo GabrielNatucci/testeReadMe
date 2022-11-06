@@ -25,7 +25,7 @@ Como mencionado anteriormente, o projeto usa quatro servomotores. O modelo utili
 
 #### ATMega328P ou Arduino:
 
-<img src="/Esquemas Elétricos/Pinout ATMega328P.png" alt="PinoutATMega328p" style="height:auto; width:100%;"/>
+<img src="/Esquemas Eletricos/Pinout ATMega328P.png" alt="PinoutATMega328p" style="height:auto; width:100%;"/>
 
 O microcontrolador ATMega328P é o microcontrolador presente no Arduino UNO. Porém, no nosso projeto, utilizamos somente o ATMega. Mas, o arduino também pode ser utilizado no lugar dele.
 
@@ -41,11 +41,11 @@ No ATMega328p/Arduino:
 - No pino 27(porta analógica A4 do arduino): o SDA do I²C.
 
 No nosso projeto, o esquema elétrico é o seguinte:
-<img src="/Esquemas Elétricos/Placa de controle robô ATMega328p.jpeg" alt="PinoutATMega328p" style="height:auto; width:100%;"/>
+<img src="/Esquemas Eletricos/Placa de controle robo ATMega328p.jpeg" alt="PinoutATMega328p" style="height:auto; width:100%;"/>
 
 #### ESP32:
 
-<img src="/Esquemas Elétricos/ESP32-pinout.jpg" alt="PinoutATMega328p" style="height:auto; width:100%;"/>
+<img src="/Esquemas Eletricos/ESP32-pinout.jpg" alt="PinoutATMega328p" style="height:auto; width:100%;"/>
 
 No ESP32, as ligações são feitas da seguinte forma:
 - No Pino 22: SCL do I²C;
@@ -65,22 +65,22 @@ Senão, será necessário instalar o *breadboard-avr* atráves da seguinte pági
 
 Para o código funcionar corretamente, são necessárias três bibliotecas que não são instaladas ao configurar o *board manager* do ESP32.
 
-Primeiramente, para instalar o *board manager* do ESP32, siga as intruções do seguinte repositório:
+Para o programa funcionar corretamente, instale o *board manager* do ESP32 e as bibliotecas que estão abaixo:
 - [esp32-arduino](https://github.com/iotechbugs/esp32-arduino)
-
-Além disso, são necessárias as bibliotecas:
 - [AsyncTCP](https://github.com/me-no-dev/AsyncTCP)
 - [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer)
 - WebSocketsServer(essa é instalável pelo próprio gerenciador de bibliotecas do Arduino, e pode ser encontrada com o seguinte nome: **WebSockets** by **Markus Sattler**)
 
-Depois disso, para o processo de configuração inicial do ESP32, é necessário um plugin(esp32-fs), que permite que se suba arquivos à memória flash do ESP32, que nesse projeto são necessários para o funcionamento da interface *Web*.
+Para o processo de configuração inicial do ESP32, é necessário um plugin(esp32-fs), que permite que se suba arquivos à memória flash do ESP32, que nesse projeto são necessários para o funcionamento da interface *Web*.
 - [esp32-fs](https://github.com/me-no-dev/arduino-esp32fs-plugin)
 
-Depois de tudo isso, deve se apertar o botão *ESP32 Sketch Data Upload*, em "ferramentas". Após isso, para se conectar ao servidor web criado pelo ESP, basta se conectar ao seu WIFI, que podem ter nome e senhas alterados no próprio código(nas linhas 9 e 10). Depois disso, basta escrever *192.168.4.1* no seu navegador de escolha e assim a seguinte página deve se carregar:
+Para salvar os arquivos da página de login na memória do ESP, é necessário *clicar* no botão *ESP32 Sketch Data Upload*, em "ferramentas", na *interface* do Arduino. Feito isso, para se conectar ao servidor web criado pelo ESP, basta se conectar ao seu WIFI, que podem ter nome e senhas alterados no próprio código(nas linhas 9 e 10). Para se conectar ao servidor, basta escrever *192.168.4.1* no seu navegador de escolha e assim a seguinte página deve se carregar:
 
 <img src="/imgs/Tela de Login.png" alt="Tela de login" style="height:auto; width:100%;"/>
 
-Nesse projeto, apesar de implementarmos a página de login, ela não foi configurada para ser acessada com determinada senha e id. Sendo assim, basta preencher os campos com qualquer coisa que o site deixará vocẽ prosseguir à tela que está no item abaixo.
+- *Observação: o navegador, às vezes, tentará se conectar ao website usando HTTPS, e não funcionará. Neste caso, mude a url para forçar a conexão usando HTTP.*
+
+Nesse projeto, apesar de implementarmos a página de login, ela não foi configurada para ser acessada com determinada senha e login. Sendo assim, basta preencher os campos com qualquer coisa que o site deixará vocẽ prosseguir à tela que está no item abaixo.
 
 #### Aplicação *Web* para configuração do Robô
 
@@ -90,7 +90,7 @@ Dessa maneira o operador responsável pelo manuseio do braço poderá escolher o
 
 Vale ressaltar que para que haja a configuração efetiva entre o operador para o braço, o microcontrolador ESP32 é o responsável pela comunicação entre a aplicação *web* e os dados que serão passados para o braço robótico, por apresentar *wifi* integrado, pode criar um *Acess Point* e lidar com com conexões de uma forma relativamente parecida com o que um servidor faria.
 
-<img src="/imgs/Tela de configuração.png" alt="Tela de configuração do braço" style="height:auto; width:100%;"/>
+<img src="/imgs/Tela de configuracao.png" alt="Tela de configuração do braço" style="height:auto; width:100%;"/>
 
 - *Observação: É recomendado que na primeira vez que se iniciar o site, clicar em "reset" e em "save", para que as posições sejam salvas e evite problemas em uso futuro*
 
@@ -98,7 +98,7 @@ Acima o "estado da conexão" e o "modo de funcionamento", indicam respectivament
 
 Abaixo, são possíveis configurar os passos.
 
-Depois, os botões no final da tela desempenham as seguintes funções:
+Ao final da tela, os botões no final da tela desempenham as seguintes funções:
 - *Run*: coloca o robo em modo automático, onde ele executará os passos configurados pelo operador anteriormente;
 - *Program*: coloca o robo em modo de configuração;
 - *Save*: Salva as posições do robô, fazendo com que mesmo se o robô perca completamente a alimentação, ele lembre do que foi salvo;
@@ -111,7 +111,7 @@ Todas as funções que estiverem ocorrendo no momento de configuração ou quand
 
 - *Observação: a variável "bool b"(linha 24), no código do ESP32 tem que ser "false" para os dados serem transmitidos ao Elipse E3.*
 
-- *Além disso, a variável "P1/N1/B1", do RS232(Domíno/Objetos de Servidor/Drivers e OPC/RS232) deve ser alterada à porta "COM" que o esp está usando no seu computador.*
+- *Além disso, a variável "P1/N1/B1", do RS232(Domínio/Objetos de Servidor/Drivers e OPC/RS232) deve ser alterada à porta "COM" que o esp está usando no seu computador.*
 
 Depois de tudo isso, a tela deve se aparecer com algo parecido abaixo:
 <img src="/imgs/TelaSupervisorioRobo.png" alt="Tela de configuração do braço" style="height:auto; width:100%;"/>
